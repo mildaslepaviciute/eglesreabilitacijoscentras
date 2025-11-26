@@ -1,0 +1,352 @@
+/* ------- VARIABLES -------- */
+@font-face {
+  font-family: "";
+  src: url(../);
+}
+/* ------- MAIN INFO -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #333;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #333;
+  font-size: 20px;
+}
+
+/* ------- TITLES, TEXTS -------- */
+.text-1 {
+  font-size: 0.6rem;
+}
+
+.text-2 {
+  font-size: 0.7rem;
+}
+
+.text-3 {
+  font-size: 0.8rem;
+}
+
+.text-4 {
+  font-size: 0.9rem;
+}
+
+.text-5 {
+  font-size: 1rem;
+}
+
+.text-6 {
+  font-size: 2rem;
+}
+
+.text-7 {
+  font-size: 2.25rem;
+}
+
+.text-8 {
+  font-size: 3rem;
+}
+
+.text-9 {
+  font-size: 3.75rem;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-green {
+  color: #00974F;
+}
+
+.text-green-dark {
+  color: #004524;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ------- BACKGROUNDS -------- */
+.bg-neat {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-green {
+  background-color: #00974F;
+}
+
+.bg-green-dark {
+  background-color: #004524;
+}
+
+/* -----  BORDERS, SHADOWS AND OTHER  ----- */
+.hr-small {
+  border: 0px;
+  border-top: 2px solid black;
+  width: 100px;
+}
+
+/* ------- NAVBAR -------- */
+.navbar-brand img {
+  width: 80px;
+}
+
+.nav-link {
+  font-size: 0.7rem;
+  color: #004524;
+}
+.nav-link:hover {
+  color: #004524;
+}
+
+/* ------- HEADER -------- */
+/* ------- FOOTER -------- */
+/* ------- BUTTONS -------- */
+.btn {
+  min-width: 150px;
+  border-radius: 10px;
+  padding: 16px 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-sm {
+  padding: 16px 30px;
+  font-size: 0.7rem;
+}
+
+.btn-green {
+  background-color: #00974F;
+  color: white;
+}
+
+.button-style-none {
+  border: none !important;
+  background: transparent !important;
+}
+
+button:active {
+  outline: none !important;
+  border: none !important;
+}
+
+button:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* ------- FORMS -------- */
+::-moz-placeholder {
+  color: black !important;
+}
+::placeholder {
+  color: black !important;
+}
+
+:-ms-input-placeholder {
+  color: black !important;
+}
+
+::-ms-input-placeholder {
+  color: black !important;
+}
+
+/* ------- SWIPER -------- */
+.testimonialSwiper .swiper-button-prev {
+  left: calc(50% - 40px) !important;
+  top: calc(100% - 20px) !important;
+}
+.testimonialSwiper .swiper-button-next {
+  right: calc(50% - 40px) !important;
+  top: calc(100% - 20px) !important;
+}
+
+.servicesSwiper .swiper-button-prev {
+  left: 0 !important;
+  top: calc(100% - 20px) !important;
+}
+.servicesSwiper .swiper-button-next {
+  right: unset !important;
+  left: 40px !important;
+  top: calc(100% - 20px) !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.swiper-button-prev::after {
+  background-image: url(../img/arrow.svg);
+  transform: rotate(180deg);
+}
+
+.swiper-button-next::after {
+  background-image: url(../img/arrow.svg);
+}
+
+/* ------- POSITIONING -------- */
+.anchor {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.transform-y-n20 {
+  transform: translateY(-20%);
+}
+
+.my-sec {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.py-sec {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+/* ------- ACTIONS -------- */
+.pointer {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* ------- OTHER -------- */
+.list-item-pill {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 25px;
+  font-size: 0.7rem;
+}
+
+/* ------- QUERIES -------- */
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 85%;
+  }
+  .position-lg-absolute {
+    position: absolute;
+  }
+  .w-lg-50 {
+    width: 50%;
+  }
+  .w-lg-75 {
+    width: 75%;
+  }
+  .my-sec {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .py-sec {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .transform-y-lg-n50 {
+    transform: translateY(-50%);
+  }
+  .text-lg-1 {
+    font-size: 0.6rem;
+  }
+  .text-lg-2 {
+    font-size: 0.7rem;
+  }
+  .text-lg-3 {
+    font-size: 0.8rem;
+  }
+  .text-lg-5 {
+    font-size: 1rem;
+  }
+  .text-lg-6 {
+    font-size: 2rem;
+  }
+  .text-lg-7 {
+    font-size: 2.25rem;
+  }
+  .text-lg-8 {
+    font-size: 3rem;
+  }
+  .text-lg-9 {
+    font-size: 3.75rem;
+  }
+  .navbar-brand img {
+    width: 100px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
