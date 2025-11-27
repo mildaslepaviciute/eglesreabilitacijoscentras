@@ -161,6 +161,18 @@ h2 {
   color: white;
 }
 
+.btn-tab {
+  padding: 16px 35px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 0.7rem;
+  color: #004524;
+}
+.btn-tab.btn-tab-active {
+  background-color: #004524;
+  color: white;
+}
+
 .button-style-none {
   border: none !important;
   background: transparent !important;
@@ -283,6 +295,7 @@ a:hover {
 /* ------- OTHER -------- */
 .list-item-pill {
   background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   padding: 5px 25px;
   font-size: 0.7rem;
 }
