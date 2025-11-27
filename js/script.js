@@ -1,7 +1,3 @@
-// Get the current year for the copyright 
-
-$('#year').text(new Date().getFullYear());
-
 // SWIPER
 
 var swiper = new Swiper(".servicesSwiper", {

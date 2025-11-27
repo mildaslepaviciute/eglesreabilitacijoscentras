@@ -127,6 +127,15 @@ h2 {
   width: 100px;
 }
 
+.shadow-card {
+  box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0039215686);
+  box-shadow: 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0078431373);
+  box-shadow: 0px 20px 13px 0px rgba(0, 0, 0, 0.0117647059);
+  box-shadow: 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0117647059);
+  box-shadow: 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0156862745);
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.0196078431);
+}
+
 /* ------- NAVBAR -------- */
 .navbar-brand img {
   width: 80px;
@@ -161,6 +170,11 @@ h2 {
   color: white;
 }
 
+.btn-white {
+  background-color: white;
+  color: #004524;
+}
+
 .btn-tab {
   padding: 16px 35px;
   border-radius: 10px;
@@ -193,19 +207,53 @@ button:focus {
 }
 
 /* ------- FORMS -------- */
-::-moz-placeholder {
-  color: black !important;
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  font-size: 0.8rem;
 }
+
+.form-control:focus {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border-color: white;
+  color: white;
+}
+.form-control:focus::-moz-placeholder {
+  opacity: 0.5;
+}
+.form-control:focus::placeholder {
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.8rem;
+}
+
 ::placeholder {
-  color: black !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.8rem;
 }
 
 :-ms-input-placeholder {
-  color: black !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.8rem;
 }
 
 ::-ms-input-placeholder {
-  color: black !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.8rem;
+}
+
+.form-check-input {
+  margin-top: 0.35em;
 }
 
 /* ------- SWIPER -------- */
