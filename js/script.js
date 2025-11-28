@@ -13,7 +13,7 @@ var swiper = new Swiper(".servicesSwiper", {
 
 var swiper = new Swiper(".testimonialSwiper", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 36,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

@@ -67,6 +67,10 @@ body {
   font-weight: 200;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
 .fw-600 {
   font-weight: 600;
 }
@@ -116,24 +120,25 @@ h2 {
   background-color: #00974F;
 }
 
+.bg-green-medium {
+  background-color: #005F31;
+}
+
 .bg-green-dark {
   background-color: #004524;
 }
 
 /* -----  BORDERS, SHADOWS AND OTHER  ----- */
-.hr-small {
-  border: 0px;
-  border-top: 2px solid black;
-  width: 100px;
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.rounded-20 {
+  border-radius: 20px;
 }
 
 .shadow-card {
-  box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0039215686);
-  box-shadow: 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0078431373);
-  box-shadow: 0px 20px 13px 0px rgba(0, 0, 0, 0.0117647059);
-  box-shadow: 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0117647059);
-  box-shadow: 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0156862745);
-  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.0196078431);
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.062745098);
 }
 
 /* ------- NAVBAR -------- */
@@ -165,8 +170,17 @@ h2 {
   font-size: 0.7rem;
 }
 
+.btn-xs {
+  padding: 10px 25px;
+  font-size: 0.6rem;
+}
+
 .btn-green {
   background-color: #00974F;
+  color: white;
+}
+.btn-green:hover {
+  background-color: #004524;
   color: white;
 }
 
@@ -174,16 +188,40 @@ h2 {
   background-color: white;
   color: #004524;
 }
+.btn-white:hover {
+  background-color: #004524;
+  color: white;
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.btn-outline-white:hover {
+  background-color: white;
+  color: #004524;
+}
+
+.btn-outline-green-dark {
+  background-color: transparent;
+  border: 1px solid #004524;
+  color: #004524;
+}
+.btn-outline-green-dark:hover {
+  background-color: #004524;
+  color: white;
+}
 
 .btn-tab {
-  padding: 16px 35px;
+  padding: 16px 30px;
   border-radius: 10px;
   background-color: white;
   font-size: 0.7rem;
   color: #004524;
 }
 .btn-tab.btn-tab-active {
-  background-color: #004524;
+  background-color: #005F31;
   color: white;
 }
 
@@ -294,6 +332,12 @@ button:focus {
   background-image: url(../img/arrow.svg);
 }
 
+/* ------- TABLES -------- */
+.table * {
+  color: #004524 !important;
+  border-color: #00974F !important;
+}
+
 /* ------- POSITIONING -------- */
 .anchor {
   padding-top: 100px;
@@ -304,12 +348,20 @@ button:focus {
   width: 70%;
 }
 
+.w-20 {
+  width: 20%;
+}
+
 .transform-y-n20 {
   transform: translateY(-20%);
 }
 
 .my-sec {
   margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.mb-sec {
   margin-bottom: 60px;
 }
 
@@ -368,12 +420,15 @@ a:hover {
     width: 75%;
   }
   .my-sec {
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .mb-sec {
+    margin-bottom: 100px;
   }
   .py-sec {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .transform-y-lg-n50 {
     transform: translateY(-50%);
