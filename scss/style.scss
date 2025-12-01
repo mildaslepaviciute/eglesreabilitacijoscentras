@@ -10,15 +10,12 @@ $text-2: 0.7rem; // 14px
 $text-3: 0.8rem; // 16px
 $text-4: 0.9rem; // 18px
 $text-5: 1rem; // 20px
-$text-6: 2rem; // 40px
-$text-7: 2.25rem; // 45px
-$text-8: 3rem; // 60px
-$text-9: 3.75rem; // 75px
-
-@font-face {
-    font-family: '';
-    src: url(../);
-}
+$text-6: 1.4rem; // 28px
+$text-7: 1.6rem; // 32px
+$text-8: 2rem; // 40px
+$text-9: 2.25rem; // 45px
+$text-10: 3rem; // 60px
+$text-11: 3.75rem; // 75px
 
 
 /* ------- MAIN INFO -------- */
@@ -84,6 +81,14 @@ body {
     font-size: $text-9;
 }
 
+.text-10 {
+    font-size: $text-10;
+}
+
+.text-11 {
+    font-size: $text-11;
+}
+
 .fw-200 {
     font-weight: 200;
 }
@@ -113,12 +118,12 @@ body {
 }
 
 h1 {
-    font-size: $text-9;
+    font-size: $text-8;
     font-weight: 700;
 }
 
 h2 {
-    font-size: $text-6;
+    font-size: $text-7;
     font-weight: 700;
 }
 
@@ -181,16 +186,20 @@ h2 {
     }
 }
 
+.nav-link-mob {
+    font-size: $text-4;
+    color: $green-dark;
+}
+
 
 /* ------- HEADER -------- */
 
 header {
-    // background: url(../img/hero.png);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // height: 90vh; 
-    // min-height: 80vh;
+    background: url(../img/bg-gradient.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
 }
 
 
@@ -203,8 +212,9 @@ header {
     min-width: 150px;
     border-radius: 10px;
     padding: 16px 40px;
-    font-size: $text-4;
+    font-size: $text-2;
     font-weight: 500;
+    width: 100%;
 }
 
 .btn-sm {
@@ -215,6 +225,7 @@ header {
 .btn-xs {
     padding: 10px 25px;
     font-size: $text-1;
+    width: auto;
 }
 
 .btn-green {
@@ -261,6 +272,9 @@ header {
     background-color: white;
     font-size: $text-2;
     color: $green-dark;
+    text-align: center;
+    display: flex;
+    align-items: center;
     &.btn-tab-active {
         background-color: $green-medium;
         color: white;
@@ -330,6 +344,18 @@ button:focus {
 
 .form-check-input {
     margin-top: 0.35em;
+}
+
+.form-check-input:checked {
+    background-color: $green-dark !important;
+    border-color: $green-dark !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-check-input {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 
@@ -406,17 +432,29 @@ button:focus {
 }
 
 .my-sec {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .mb-sec {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .py-sec {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.pt-sec {
+    padding-top: 70px;
+}
+
+.pb-sec {
+    padding-bottom: 70px;
+}
+
+.min-h-100 {
+    min-height: 100%;
 }
 
 .z-0 {
@@ -453,11 +491,33 @@ a:hover {
     font-size: $text-2;
 }
 
+.img-positioning {
+    transform: translateY(-30px);
+}
 
 /* ------- QUERIES -------- */
 
 @media (max-width: 991px) {
-    
+    .pe-0-mob {
+        padding-right: 0 !important;
+    }
+
+    .px-0-mob {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .ps-container-mob {
+        padding-left: 1.5rem !important;
+    }
+
+    html {
+        font-size: $text-3;
+    }
+
+    body {
+        font-size: $text-3;
+    }
 }
 
 // Small devices
@@ -466,7 +526,10 @@ a:hover {
 // Medium devices
 @media (min-width: 768px) {
     .w-md-50 {
-        width: 50%;
+        width: 50% !important;
+    }
+    .btn {
+        width: auto;
     }
 }
 
@@ -481,11 +544,11 @@ a:hover {
     }
 
     .w-lg-50 {
-        width: 50%;
+        width: 50% !important;
     }
 
     .w-lg-75 {
-        width: 75%;
+        width: 75% !important;
     }
 
     .my-sec {
@@ -500,6 +563,18 @@ a:hover {
     .py-sec {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .pt-sec {
+        padding-top: 100px;
+    }
+
+    .pb-sec {
+        padding-bottom: 100px;
+    }
+
+    .pb-lg-50 {
+        padding-bottom: 50px;
     }
 
     .transform-y-lg-n50 {
@@ -522,14 +597,6 @@ a:hover {
         font-size: $text-5;
     }
 
-    .text-lg-6 {
-        font-size: $text-6;
-    }
-
-    .text-lg-7 {
-        font-size: $text-7;
-    }
-
     .text-lg-8 {
         font-size: $text-8;
     }
@@ -538,8 +605,44 @@ a:hover {
         font-size: $text-9;
     }
 
+    .text-lg-10 {
+        font-size: $text-10;
+    }
+
+    .text-lg-11 {
+        font-size: $text-11;
+    }
+
+    h1 {
+        font-size: $text-11;
+    }
+
+    h2 {
+        font-size: $text-8;
+    }
+
     .navbar-brand img {
         width: 100px;
+    }
+
+    .btn {
+        font-size: $text-4;
+    }
+
+    .btn-sm {
+        font-size: $text-2;
+    }
+
+    .btn-xs {
+        font-size: $text-1;
+    }
+
+    .img-positioning {
+        transform: translateY(50px);
+    }
+
+    .pe-lg-18 {
+        padding-right: 18%;
     }
 }
 
