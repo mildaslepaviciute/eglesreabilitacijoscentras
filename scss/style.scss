@@ -14,8 +14,9 @@ $text-6: 1.4rem; // 28px
 $text-7: 1.6rem; // 32px
 $text-8: 2rem; // 40px
 $text-9: 2.25rem; // 45px
-$text-10: 3rem; // 60px
-$text-11: 3.75rem; // 75px
+$text-10: 2.5rem; // 50px
+$text-11: 3rem; // 60px
+$text-12: 3.75rem; // 75px
 
 
 /* ------- MAIN INFO -------- */
@@ -87,6 +88,10 @@ body {
 
 .text-11 {
     font-size: $text-11;
+}
+
+.text-12 {
+    font-size: $text-12;
 }
 
 .fw-200 {
@@ -164,12 +169,12 @@ h2 {
 }
 
 .rounded-20 {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.shadow-card {
-    box-shadow: 0px 100px 80px 0px #00000010;
-}
+// .shadow-card {
+//     box-shadow: 0px 100px 80px 0px #00000010;
+// }
 
 
 /* ------- NAVBAR -------- */
@@ -187,7 +192,7 @@ h2 {
 }
 
 .nav-link-mob {
-    font-size: $text-4;
+    font-size: $text-5;
     color: $green-dark;
 }
 
@@ -205,6 +210,11 @@ header {
 
 /* ------- FOOTER -------- */
 
+.columns-footer {
+    column-count: 2;
+    column-gap: 1.5rem;
+}
+
 
 /* ------- BUTTONS -------- */
 
@@ -212,7 +222,7 @@ header {
     min-width: 150px;
     border-radius: 10px;
     padding: 16px 40px;
-    font-size: $text-2;
+    font-size: $text-4;
     font-weight: 500;
     width: 100%;
 }
@@ -231,18 +241,22 @@ header {
 .btn-green {
     background-color: $green;
     color: white;
+    transition-duration: 0.3s;
     &:hover {
         background-color: $green-dark;
         color: white;
+        transition-duration: 0.3s;
     }
 }
 
 .btn-white {
     background-color: white;
     color: $green-dark;
+    transition-duration: 0.3s;
     &:hover {
         background-color: $green-dark;
         color: white;
+        transition-duration: 0.3s;
     }
 }
 
@@ -250,9 +264,11 @@ header {
     background-color: transparent;
     border: 1px solid white;
     color: white;
+    transition-duration: 0.3s;
     &:hover {
         background-color: white;
         color: $green-dark;
+        transition-duration: 0.3s;
     }
 }
 
@@ -260,14 +276,16 @@ header {
     background-color: transparent;
     border: 1px solid $green-dark;
     color: $green-dark;
+    transition-duration: 0.3s;
     &:hover {
         background-color: $green-dark;
         color: white;
+        transition-duration: 0.3s;
     }
 }
 
 .btn-tab {
-    padding: 16px 30px;
+    padding: 16px 20px;
     border-radius: 10px;
     background-color: white;
     font-size: $text-2;
@@ -275,9 +293,17 @@ header {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: $green-medium;
+        color: white;
+        transition-duration: 0.3s;
+    }
     &.btn-tab-active {
         background-color: $green-medium;
         color: white;
+        transition-duration: 0.3s;
     }
 }
 
@@ -412,6 +438,10 @@ button:focus {
     border-color: $green !important;
 }
 
+td {
+    font-size: $text-4;
+}
+
 /* ------- POSITIONING -------- */
 
 .anchor {
@@ -451,6 +481,10 @@ button:focus {
 
 .pb-sec {
     padding-bottom: 70px;
+}
+
+.pb-6 {
+    padding-bottom: 4rem !important;
 }
 
 .min-h-100 {
@@ -493,6 +527,13 @@ a:hover {
 
 .img-positioning {
     transform: translateY(-30px);
+}
+
+.rounded-sec-my-neg {
+    margin-top: -9px;
+    margin-bottom: -9px;
+    position: relative;
+    z-index: 1;
 }
 
 /* ------- QUERIES -------- */
@@ -551,6 +592,10 @@ a:hover {
         width: 75% !important;
     }
 
+    .w-lg-100 {
+        width: 100% !important;
+    }
+
     .my-sec {
         margin-top: 100px;
         margin-bottom: 100px;
@@ -593,8 +638,20 @@ a:hover {
         font-size: $text-3;
     }
 
+    .text-lg-4 {
+        font-size: $text-4;
+    }
+
     .text-lg-5 {
         font-size: $text-5;
+    }
+
+    .text-lg-6 {
+        font-size: $text-6;
+    }
+
+    .text-lg-7 {
+        font-size: $text-7;
     }
 
     .text-lg-8 {
@@ -613,8 +670,12 @@ a:hover {
         font-size: $text-11;
     }
 
+    .text-lg-12 {
+        font-size: $text-12;
+    }
+
     h1 {
-        font-size: $text-11;
+        font-size: $text-12;
     }
 
     h2 {
@@ -625,24 +686,25 @@ a:hover {
         width: 100px;
     }
 
-    .btn {
-        font-size: $text-4;
-    }
-
-    .btn-sm {
-        font-size: $text-2;
-    }
-
-    .btn-xs {
-        font-size: $text-1;
-    }
-
     .img-positioning {
         transform: translateY(50px);
     }
 
     .pe-lg-18 {
         padding-right: 18%;
+    }
+
+    .columns-footer {
+        column-count: 3;
+    }
+
+    .rounded-20 {
+        border-radius: 20px;
+    }
+
+    .rounded-sec-my-neg {
+        margin-top: -18px;
+        margin-bottom: -18px;
     }
 }
 

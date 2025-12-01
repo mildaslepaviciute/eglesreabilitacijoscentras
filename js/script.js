@@ -1,6 +1,6 @@
 // SWIPER
 
-var swiper = new Swiper(".servicesSwiper", {
+new Swiper(".servicesSwiper", {
   effect: "fade",
   fadeEffect: {
     crossFade: true,
@@ -11,9 +11,9 @@ var swiper = new Swiper(".servicesSwiper", {
   },
 });
 
-var swiper = new Swiper(".testimonialSwiper", {
+new Swiper(".testimonialSwiper", {
   slidesPerView: 1.5,
-  spaceBetween: 36,
+  spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -24,6 +24,7 @@ var swiper = new Swiper(".testimonialSwiper", {
     },
     768: {
       slidesPerView: 3,
+      spaceBetween: 36,
     },
     992: {
       slidesPerView: 3,
@@ -31,24 +32,13 @@ var swiper = new Swiper(".testimonialSwiper", {
   },
 });
 
-
-let swiper;
-
-function initSwiper() {
-  const screenWidth = window.innerWidth;
-
-  if (screenWidth < 992 && !swiper) {
-      swiper = new Swiper(".servicesTabsSwiper", {
-        slidesPerView: "auto",
-        spaceBetween: 16,
-      });
-  }
-
-  if (screenWidth >= 992 && swiper) {
-      swiper.destroy(true, true);
-      swiper = undefined;
-  }
+if (window.innerWidth < 992) {
+  new Swiper(".servicesTabsSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    grabCursor: true,
+    simulateTouch: true,
+    touchRatio: 1,
+    touchAngle: 45,
+  });
 }
-
-initSwiper();
-window.addEventListener("resize", initSwiper);

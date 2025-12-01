@@ -60,10 +60,14 @@ body {
 }
 
 .text-10 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .text-11 {
+  font-size: 3rem;
+}
+
+.text-12 {
   font-size: 3.75rem;
 }
 
@@ -138,11 +142,7 @@ h2 {
 }
 
 .rounded-20 {
-  border-radius: 20px;
-}
-
-.shadow-card {
-  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.062745098);
+  border-radius: 10px;
 }
 
 /* ------- NAVBAR -------- */
@@ -159,7 +159,7 @@ h2 {
 }
 
 .nav-link-mob {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #004524;
 }
 
@@ -173,12 +173,19 @@ header {
 }
 
 /* ------- FOOTER -------- */
+.columns-footer {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
 /* ------- BUTTONS -------- */
 .btn {
   min-width: 150px;
   border-radius: 10px;
   padding: 16px 40px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 500;
   width: 100%;
 }
@@ -197,43 +204,51 @@ header {
 .btn-green {
   background-color: #00974F;
   color: white;
+  transition-duration: 0.3s;
 }
 .btn-green:hover {
   background-color: #004524;
   color: white;
+  transition-duration: 0.3s;
 }
 
 .btn-white {
   background-color: white;
   color: #004524;
+  transition-duration: 0.3s;
 }
 .btn-white:hover {
   background-color: #004524;
   color: white;
+  transition-duration: 0.3s;
 }
 
 .btn-outline-white {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  transition-duration: 0.3s;
 }
 .btn-outline-white:hover {
   background-color: white;
   color: #004524;
+  transition-duration: 0.3s;
 }
 
 .btn-outline-green-dark {
   background-color: transparent;
   border: 1px solid #004524;
   color: #004524;
+  transition-duration: 0.3s;
 }
 .btn-outline-green-dark:hover {
   background-color: #004524;
   color: white;
+  transition-duration: 0.3s;
 }
 
 .btn-tab {
-  padding: 16px 30px;
+  padding: 16px 20px;
   border-radius: 10px;
   background-color: white;
   font-size: 0.7rem;
@@ -241,10 +256,18 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+}
+.btn-tab:hover {
+  background-color: #005F31;
+  color: white;
+  transition-duration: 0.3s;
 }
 .btn-tab.btn-tab-active {
   background-color: #005F31;
   color: white;
+  transition-duration: 0.3s;
 }
 
 .button-style-none {
@@ -372,6 +395,10 @@ button:focus {
   border-color: #00974F !important;
 }
 
+td {
+  font-size: 0.9rem;
+}
+
 /* ------- POSITIONING -------- */
 .anchor {
   padding-top: 100px;
@@ -412,6 +439,10 @@ button:focus {
   padding-bottom: 70px;
 }
 
+.pb-6 {
+  padding-bottom: 4rem !important;
+}
+
 .min-h-100 {
   min-height: 100%;
 }
@@ -448,6 +479,13 @@ a:hover {
 
 .img-positioning {
   transform: translateY(-30px);
+}
+
+.rounded-sec-my-neg {
+  margin-top: -9px;
+  margin-bottom: -9px;
+  position: relative;
+  z-index: 1;
 }
 
 /* ------- QUERIES -------- */
@@ -490,6 +528,9 @@ a:hover {
   .w-lg-75 {
     width: 75% !important;
   }
+  .w-lg-100 {
+    width: 100% !important;
+  }
   .my-sec {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -522,8 +563,17 @@ a:hover {
   .text-lg-3 {
     font-size: 0.8rem;
   }
+  .text-lg-4 {
+    font-size: 0.9rem;
+  }
   .text-lg-5 {
     font-size: 1rem;
+  }
+  .text-lg-6 {
+    font-size: 1.4rem;
+  }
+  .text-lg-7 {
+    font-size: 1.6rem;
   }
   .text-lg-8 {
     font-size: 2rem;
@@ -532,9 +582,12 @@ a:hover {
     font-size: 2.25rem;
   }
   .text-lg-10 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .text-lg-11 {
+    font-size: 3rem;
+  }
+  .text-lg-12 {
     font-size: 3.75rem;
   }
   h1 {
@@ -546,20 +599,22 @@ a:hover {
   .navbar-brand img {
     width: 100px;
   }
-  .btn {
-    font-size: 0.9rem;
-  }
-  .btn-sm {
-    font-size: 0.7rem;
-  }
-  .btn-xs {
-    font-size: 0.6rem;
-  }
   .img-positioning {
     transform: translateY(50px);
   }
   .pe-lg-18 {
     padding-right: 18%;
+  }
+  .columns-footer {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+  .rounded-20 {
+    border-radius: 20px;
+  }
+  .rounded-sec-my-neg {
+    margin-top: -18px;
+    margin-bottom: -18px;
   }
 }
 @media (min-width: 1600px) {
