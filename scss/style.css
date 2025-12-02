@@ -603,7 +603,7 @@ a:hover {
     transform: translateY(50px);
   }
   .pe-lg-18 {
-    padding-right: 18%;
+    padding-right: 18% !important;
   }
   .columns-footer {
     -moz-column-count: 3;
