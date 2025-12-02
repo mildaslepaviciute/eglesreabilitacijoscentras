@@ -10,7 +10,7 @@ html {
   font-family: "Poppins";
   font-weight: 400;
   color: #333;
-  font-size: 20px;
+  font-size: 18px;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
@@ -19,7 +19,7 @@ body {
   font-family: "Poppins";
   font-weight: 400;
   color: #333;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* ------- TITLES, TEXTS -------- */
@@ -136,6 +136,10 @@ h2 {
   background-color: #004524;
 }
 
+.bg-purple {
+  background-color: #907BB2;
+}
+
 /* -----  BORDERS, SHADOWS AND OTHER  ----- */
 .rounded-10 {
   border-radius: 10px;
@@ -184,14 +188,14 @@ header {
 .btn {
   min-width: 150px;
   border-radius: 10px;
-  padding: 16px 40px;
+  padding: 14px 35px;
   font-size: 0.9rem;
   font-weight: 500;
   width: 100%;
 }
 
 .btn-sm {
-  padding: 16px 30px;
+  padding: 14px 25px;
   font-size: 0.7rem;
 }
 
@@ -248,7 +252,7 @@ header {
 }
 
 .btn-tab {
-  padding: 16px 20px;
+  padding: 14px 20px;
   border-radius: 10px;
   background-color: white;
   font-size: 0.7rem;
@@ -601,6 +605,10 @@ a:hover {
   }
   .img-positioning {
     transform: translateY(50px);
+    margin-left: -40px;
+  }
+  .textcard-positioning {
+    margin-right: -40px;
   }
   .pe-lg-18 {
     padding-right: 18% !important;

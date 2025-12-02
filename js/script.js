@@ -22,12 +22,9 @@ new Swiper(".testimonialSwiper", {
     576: {
       slidesPerView: 2.5,
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 36,
-    },
     992: {
       slidesPerView: 3,
+      spaceBetween: 36,
     },
   },
 });

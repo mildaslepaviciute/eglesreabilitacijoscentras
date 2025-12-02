@@ -3,6 +3,7 @@
 $green:  #00974F;
 $green-medium: #005F31;
 $green-dark: #004524;
+$purple: #907BB2;
 
 $text-root: 1rem;  // 20px
 $text-1: 0.6rem; // 12px
@@ -31,7 +32,7 @@ html {
     font-family: "Poppins";
     font-weight: 400;
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
 }
@@ -40,7 +41,7 @@ body {
     font-family: "Poppins";
     font-weight: 400;
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -161,6 +162,10 @@ h2 {
     background-color: $green-dark;
 }
 
+.bg-purple {
+    background-color: $purple;
+}
+
 
 /* -----  BORDERS, SHADOWS AND OTHER  ----- */
 
@@ -221,14 +226,14 @@ header {
 .btn {
     min-width: 150px;
     border-radius: 10px;
-    padding: 16px 40px;
+    padding: 14px 35px;
     font-size: $text-4;
     font-weight: 500;
     width: 100%;
 }
 
 .btn-sm {
-    padding: 16px 30px;
+    padding: 14px 25px;
     font-size: $text-2;
 }
 
@@ -285,7 +290,7 @@ header {
 }
 
 .btn-tab {
-    padding: 16px 20px;
+    padding: 14px 20px;
     border-radius: 10px;
     background-color: white;
     font-size: $text-2;
@@ -688,6 +693,11 @@ a:hover {
 
     .img-positioning {
         transform: translateY(50px);
+        margin-left: -40px;
+    }
+
+    .textcard-positioning {
+        margin-right: -40px;
     }
 
     .pe-lg-18 {
